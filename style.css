@@ -232,6 +232,11 @@ ul {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Media Queries */
 
 @media (min-width: 1001px) {
