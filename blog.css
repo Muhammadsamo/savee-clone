@@ -19,7 +19,7 @@
 }
 
 /* Article Header byline */
-/* .article .article-byline {
+.article .article-byline {
   display: flex;
   justify-content: space-between;
   margin: min(24px, 5.6vmin) 0 0;
@@ -37,7 +37,7 @@
   color: #979797;
   font-size: 0.875rem;
   line-height: 1.05rem;
-} */
+}
 
 /* Article Author */
 
