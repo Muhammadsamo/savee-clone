@@ -8,7 +8,7 @@
     <title>Blog Title</title>
   </head>
   <body>
-    <header class="main-header outer">
+    <header class="main-header">
       <div class="container">
         <div class="main-header-inner flex justify-between">
           <a href="/"
@@ -21,31 +21,8 @@
               /></div
           ></a>
           <ul class="main-header-nav">
-            <li><a href="#">Open SAVEE</a></li>
+            <li>Open SAVEE</li>
           </ul>
-          <div class="search">
-            <button
-              id="search"
-              aria-label="search"
-              class="main-header-search-btn"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                width="20"
-                height="20"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                ></path>
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </header>
@@ -57,7 +34,7 @@
               Crafting the best platform for creatives
             </h1>
 
-            <div class="article-byline">
+            <!-- <div class="article-byline">
               <section class="article-byline-content">
                 <ul class="author-list">
                   <li class="author-list-item">
@@ -85,7 +62,7 @@
                   </div>
                 </div>
               </section>
-            </div>
+            </div> -->
 
             <figure class="article-image">
               <img
@@ -253,6 +230,10 @@
       </div>
     </main>
     <aside class="read-more-wrap">
+      <h2 class="read-more-title">Category List</h2>
+      <br />
+      <br />
+      <br />
       <div class="container read-more">
         <article class="post-card post">
           <a class="post-card-image-link" href="#">
@@ -273,7 +254,7 @@
 
           <div class="post-card-content">
             <a class="post-card-content-link" href="#">
-              <header class="post-card-header">
+              <header>
                 <div class="post-card-tags"></div>
                 <h2 class="post-card-title">Interview with Karina Sirqueira</h2>
               </header>
@@ -287,10 +268,8 @@
             </a>
 
             <footer class="post-card-meta">
-              <time class="post-card-meta-date" datetime="2023-10-11"
-                >Oct 11, 2023</time
-              >
-              <span class="post-card-meta-length">2 min read</span>
+              <time datetime="2023-10-11">Oct 11, 2023</time>
+              <span>2 min read</span>
             </footer>
           </div>
         </article>
@@ -314,7 +293,7 @@
 
           <div class="post-card-content">
             <a class="post-card-content-link" href="#">
-              <header class="post-card-header">
+              <header>
                 <div class="post-card-tags"></div>
                 <h2 class="post-card-title">Search by Color on SAVEE</h2>
               </header>
@@ -328,10 +307,8 @@
             </a>
 
             <footer class="post-card-meta">
-              <time class="post-card-meta-date" datetime="2023-09-25"
-                >Sep 25, 2023</time
-              >
-              <span class="post-card-meta-length">2 min read</span>
+              <time datetime="2023-09-25">Sep 25, 2023</time>
+              <span>2 min read</span>
             </footer>
           </div>
         </article>
@@ -355,7 +332,7 @@
 
           <div class="post-card-content">
             <a class="post-card-content-link" href="#">
-              <header class="post-card-header">
+              <header>
                 <div class="post-card-tags"></div>
                 <h2 class="post-card-title">
                   Most saved images this week on SAVEE — 001
@@ -371,16 +348,14 @@
             </a>
 
             <footer class="post-card-meta">
-              <time class="post-card-meta-date" datetime="2023-09-18"
-                >Sep 18, 2023</time
-              >
-              <span class="post-card-meta-length">1 min read</span>
+              <time datetime="2023-09-18">Sep 18, 2023</time>
+              <span>1 min read</span>
             </footer>
           </div>
         </article>
       </div>
     </aside>
-    
+
     <footer class="site-footer">
       <div class="container">
         <section class="copyright">
@@ -388,7 +363,7 @@
           &copy; 2023
         </section>
         <nav class="site-footer-nav"></nav>
-        <div class="powered-by">
+        <div>
           <a href="#" target="_blank" rel="noopener">Powered by Ghost</a>
         </div>
       </div>
