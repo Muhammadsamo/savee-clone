@@ -80,7 +80,7 @@ ul {
 }
 
 .main-header-nav {
-  width: 92%;
+  width: 70%;
   font-weight: 600;
 }
 
@@ -95,6 +95,12 @@ ul {
   outline: none;
   padding: 0;
   width: 32px;
+}
+
+/* Logo */
+
+.logo img {
+  width: 16.75rem;
 }
 
 /* Post Feed */
