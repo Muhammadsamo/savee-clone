@@ -76,7 +76,8 @@ ul {
 /* Header */
 
 .main-header-inner {
-  height: 90px;
+  min-height: 90px;
+  gap: 3rem;
 }
 
 .main-header-nav {
@@ -306,5 +307,16 @@ ul {
     grid-template-columns: 1fr;
     max-width: 500px;
     text-align: center;
+  }
+
+  .main-header-inner {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .main-header-nav {
+    width: 100%;
   }
 }
