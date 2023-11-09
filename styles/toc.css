@@ -1,6 +1,7 @@
 .toc-navigation-container {
   width: 22%;
   align-self: normal;
+  display: none;
 }
 
 .toc-navigation-content {
@@ -12,9 +13,16 @@
 }
 
 .toc-heading {
+  text-align: center;
   margin-bottom: 1rem;
 }
 
 .toc-navigation-content a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .toc-navigation-container {
+    display: block;
+  }
 }
