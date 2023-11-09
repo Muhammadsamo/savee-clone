@@ -17,6 +17,10 @@
   margin-bottom: 1rem;
 }
 
+.toc-navigation-content li > ol {
+  padding-left: 1rem;
+}
+
 .toc-navigation-content a:hover {
   text-decoration: underline;
 }
