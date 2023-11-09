@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/blog.css" />
+    <link rel="stylesheet" href="./styles/toc.css" />
     <title>Blog Title</title>
   </head>
   <body>
@@ -26,6 +27,7 @@
         </div>
       </div>
     </header>
+
     <main id="site-main">
       <div class="container">
         <article class="article post">
@@ -83,149 +85,158 @@
             </figure>
           </header>
 
-          <section class="article-content">
-            <p>
-              <br />Hey friend, we hope you are having a great start of the
-              week! Here in California we just started feeling the fall and the
-              weather is getting more chill.<br /><br />This week we want to
-              talk about all the reasons why we think we are creating something
-              unique for all of us.<br /><br />SAVEE was created by passionate
-              immigrants who care deeply about craft. Period.
-            </p>
-            <p>
-              It's not a secret in our creative industry that SAVEE is way
-              better than Pinterest to find inspiration. With no ads and a more
-              sophisticated user interface, SAVEE stands out as a far better
-              solution that will help creatives save tons of time.
-            </p>
-            <h2
-              id="here-is-a-breakdown-of-why-we-think-you-find-inspiration-faster-on-savee"
-            >
-              Here is a breakdown of why we think you find inspiration faster on
-              SAVEE.<br />
-            </h2>
-            <p>
-              <br /><strong>1 - Get inspired by the best</strong><br />With
-              almost 1M users, SAVEE attracts talented people from different
-              fields, like design, motion, architecture, and fashion. Many
-              tastemakers are using SAVEE to share what inspires them.
-            </p>
-            <figure class="article-gallery-image">
-              <img
-                src="./images/Quality-1.jpg"
-                srcset="
-                  ./images/300w/Quality-1.webp  300w,
-                  ./images/768w/Quality-1.webp  768w,
-                  ./images/940w/Quality-1.webp  940w,
-                  ./images/Quality-1.webp      1024w
-                "
-                sizes="(max-width: 1000px) 100vw, 1000px"
-                class="gallery-image"
-                alt=""
-                loading="lazy"
-                width="1920"
-                height="1080"
-              />
-              <figcaption>
-                <span
-                  >Get inspired by the best users in the creative
-                  industry.</span
-                >
-              </figcaption>
-            </figure>
-            <p></p>
-            <p>
-              <strong>2 - High quality content</strong><br />Often people ask
-              why everything on SAVEE looks stunning — and the reason is that we
-              have a high level of human curation, combining years of saving a
-              wide range of images, that vary from digital to physical products.
-              Every time you open our product a wall of beauty hits you.
-            </p>
-            <figure class="article-gallery-image">
-              <img
-                src="./images/Curated.jpg"
-                class="gallery-image"
-                alt=""
-                loading="lazy"
-                width="1920"
-                height="1080"
-                srcset="
-                  ./images/300w/Curated.webp  300w,
-                  ./images/768w/Curated.webp  768w,
-                  ./images/940w/Curated.webp  940w,
-                  ./images/Curated.webp      1024w
-                "
-                sizes="(max-width: 1000px) 100vw, 1000px"
-              />
-              <figcaption>
-                <span
-                  >Simple, clean, elegant grid with your inspiration! Light or
-                  dark mode, you choose.</span
-                >
-              </figcaption>
-            </figure>
-            <p></p>
-            <p>
-              <strong>3 - Find inspiration faster</strong><br />With a
-              fast-loading feed (which takes about 2 seconds to be shown),
-              search by color, and a streamlined approach to boards, SAVEE helps
-              you find high-quality inspiration in a fraction of the time, which
-              would take you longer in other platforms.
-            </p>
-            <figure class="article-gallery-image">
-              <img
-                src="./images/Extension.jpg"
-                class="gallery-image"
-                alt=""
-                loading="lazy"
-                width="1920"
-                height="1080"
-                srcset="
-                  ./images/300w/Extension.webp  300w,
-                  ./images/768w/Extension.webp  768w,
-                  ./images/940w/Extension.webp  940w,
-                  ./images/Extension.webp      1024w
-                "
-                sizes="(max-width: 1000px) 100vw, 1000px"
-              />
-              <figcaption>
-                <span>Download our </span
-                ><a href="#" rel="noreferrer"><span>browser add-ons</span></a>
-              </figcaption>
-            </figure>
-            <p></p>
-            <p>
-              <br /><br /><strong>4 - No Ads or interruptions</strong><br />We
-              are independent! That means we only need to answer to our users.
-              And we don't believe in Ads, we believe in you taking control and
-              only seeing what you want to see.
-            </p>
-            <figure class="article-gallery-image">
-              <img
-                src="./images/faster-1.jpg"
-                class="gallery-image"
-                alt=""
-                loading="lazy"
-                width="1920"
-                height="1080"
-                srcset="
-                  ./images/300w/faster-1.webp  300w,
-                  ./images/768w/faster-1.webp  768w,
-                  ./images/940w/faster-1.webp  940w,
-                  ./images/faster-1.webp      1024w
-                "
-                sizes="(max-width: 1000px) 100vw, 1000px"
-              />
-              <figcaption>
-                <span>SAVEE has no ads on your browsing experience.</span>
-              </figcaption>
-            </figure>
-            <p></p>
-            <p>
-              That's it. We hope you like it. Let us know what you think.<br />If
-              you want to reach out, just reply to this email 👋<br />
-            </p>
-          </section>
+          <div class="flex">
+            <section class="article-content" data-content>
+              <p>
+                <br />Hey friend, we hope you are having a great start of the
+                week! Here in California we just started feeling the fall and
+                the weather is getting more chill.<br /><br />This week we want
+                to talk about all the reasons why we think we are creating
+                something unique for all of us.<br /><br />SAVEE was created by
+                passionate immigrants who care deeply about craft. Period.
+              </p>
+              <p>
+                It's not a secret in our creative industry that SAVEE is way
+                better than Pinterest to find inspiration. With no ads and a
+                more sophisticated user interface, SAVEE stands out as a far
+                better solution that will help creatives save tons of time.
+              </p>
+              <h2
+                id="here-is-a-breakdown-of-why-we-think-you-find-inspiration-faster-on-savee"
+              >
+                Here is a breakdown of why we think you find inspiration faster
+                on SAVEE.<br />
+              </h2>
+              <p>
+                <br /><strong>1 - Get inspired by the best</strong><br />With
+                almost 1M users, SAVEE attracts talented people from different
+                fields, like design, motion, architecture, and fashion. Many
+                tastemakers are using SAVEE to share what inspires them.
+              </p>
+              <figure class="article-gallery-image">
+                <img
+                  src="./images/Quality-1.jpg"
+                  srcset="
+                    ./images/300w/Quality-1.webp  300w,
+                    ./images/768w/Quality-1.webp  768w,
+                    ./images/940w/Quality-1.webp  940w,
+                    ./images/Quality-1.webp      1024w
+                  "
+                  sizes="(max-width: 1000px) 100vw, 1000px"
+                  class="gallery-image"
+                  alt=""
+                  loading="lazy"
+                  width="1920"
+                  height="1080"
+                />
+                <figcaption>
+                  <span
+                    >Get inspired by the best users in the creative
+                    industry.</span
+                  >
+                </figcaption>
+              </figure>
+              <p></p>
+              <p>
+                <h3>2 - High quality content</h3><br />Often people ask
+                why everything on SAVEE looks stunning — and the reason is that
+                we have a high level of human curation, combining years of
+                saving a wide range of images, that vary from digital to
+                physical products. Every time you open our product a wall of
+                beauty hits you.
+              </p>
+              <figure class="article-gallery-image">
+                <img
+                  src="./images/Curated.jpg"
+                  class="gallery-image"
+                  alt=""
+                  loading="lazy"
+                  width="1920"
+                  height="1080"
+                  srcset="
+                    ./images/300w/Curated.webp  300w,
+                    ./images/768w/Curated.webp  768w,
+                    ./images/940w/Curated.webp  940w,
+                    ./images/Curated.webp      1024w
+                  "
+                  sizes="(max-width: 1000px) 100vw, 1000px"
+                />
+                <figcaption>
+                  <span
+                    >Simple, clean, elegant grid with your inspiration! Light or
+                    dark mode, you choose.</span
+                  >
+                </figcaption>
+              </figure>
+              <p></p>
+              <p>
+                <strong>3 - Find inspiration faster</strong><br />With a
+                fast-loading feed (which takes about 2 seconds to be shown),
+                search by color, and a streamlined approach to boards, SAVEE
+                helps you find high-quality inspiration in a fraction of the
+                time, which would take you longer in other platforms.
+              </p>
+              <figure class="article-gallery-image">
+                <img
+                  src="./images/Extension.jpg"
+                  class="gallery-image"
+                  alt=""
+                  loading="lazy"
+                  width="1920"
+                  height="1080"
+                  srcset="
+                    ./images/300w/Extension.webp  300w,
+                    ./images/768w/Extension.webp  768w,
+                    ./images/940w/Extension.webp  940w,
+                    ./images/Extension.webp      1024w
+                  "
+                  sizes="(max-width: 1000px) 100vw, 1000px"
+                />
+                <figcaption>
+                  <span>Download our </span
+                  ><a href="#" rel="noreferrer"><span>browser add-ons</span></a>
+                </figcaption>
+              </figure>
+              <p></p>
+              <p>
+                <br /><br /><strong>4 - No Ads or interruptions</strong><br />We
+                are independent! That means we only need to answer to our users.
+                And we don't believe in Ads, we believe in you taking control
+                and only seeing what you want to see.
+              </p>
+              <figure class="article-gallery-image">
+                <img
+                  src="./images/faster-1.jpg"
+                  class="gallery-image"
+                  alt=""
+                  loading="lazy"
+                  width="1920"
+                  height="1080"
+                  srcset="
+                    ./images/300w/faster-1.webp  300w,
+                    ./images/768w/faster-1.webp  768w,
+                    ./images/940w/faster-1.webp  940w,
+                    ./images/faster-1.webp      1024w
+                  "
+                  sizes="(max-width: 1000px) 100vw, 1000px"
+                />
+                <figcaption>
+                  <span>SAVEE has no ads on your browsing experience.</span>
+                </figcaption>
+              </figure>
+              <p></p>
+              <p>
+                That's it. We hope you like it. Let us know what you think.<br />If
+                you want to reach out, just reply to this email 👋<br />
+              </p>
+            </section>
+            <aside class="toc-navigation-container">
+              <div class="toc-navigation-content">
+                <h2 class="toc-heading">Table of Contents</h2>
+                <div data-toc></div>
+              </div>
+            </aside>
+          </div>
         </article>
       </div>
     </main>
@@ -368,5 +379,14 @@
         </div>
       </div>
     </footer>
+
+    <script src="./scripts/toc.js"></script>
+    <script>
+      tableOfContents("[data-content]", "[data-toc]", {
+        heading: "", // Change the headings
+        listType: "ol", // Change the list type
+        levels: "h2, h3", // Change the levels used
+      });
+    </script>
   </body>
 </html>

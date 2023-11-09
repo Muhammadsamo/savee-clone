@@ -60,6 +60,7 @@ ul {
 }
 
 .container {
+  position: relative;
   max-width: 90rem;
   padding-inline: 7.5rem;
   margin-inline: auto;

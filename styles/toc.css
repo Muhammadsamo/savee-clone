@@ -1,0 +1,20 @@
+.toc-navigation-container {
+  width: 22%;
+  align-self: normal;
+}
+
+.toc-navigation-content {
+  position: sticky;
+  top: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ededed;
+  padding: 1rem 2rem;
+}
+
+.toc-heading {
+  margin-bottom: 1rem;
+}
+
+.toc-navigation-content a:hover {
+  text-decoration: underline;
+}
