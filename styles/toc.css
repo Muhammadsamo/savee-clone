@@ -25,6 +25,22 @@
   text-decoration: underline;
 }
 
+ol {
+  counter-reset: item;
+}
+li {
+  display: block;
+}
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.toc-nav li.active > a {
+  color: #f40045;
+}
+
 @media screen and (min-width: 1024px) {
   .toc-navigation-container {
     display: block;

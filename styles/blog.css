@@ -1,3 +1,13 @@
+/* resets */
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0 currentColor;
+  border-image: none;
+}
+
 /* Article */
 .article {
   padding: max(8vmin, 40px) 0 max(8vmin, 64px);
@@ -163,6 +173,102 @@ figcaption a {
   margin-block: max(3.2vmin, 24px);
 }
 
+/* Author */
+
+.editor {
+  padding: 1.25rem 0;
+  border: 1px solid #e2e2e2;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-top: 3.125rem;
+}
+
+.editor .edited-by {
+  text-transform: uppercase;
+  color: #b9b9b9;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.editor .author {
+  font-size: 1.3125rem;
+  margin: 0.3125rem 0.625rem 0.3125rem 0;
+  display: inline;
+}
+
+.editor p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.editor .icon {
+  margin: 0.625rem 0;
+  text-align: left;
+  display: inline;
+  cursor: pointer;
+}
+
+.editor .icon > a {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+  position: relative;
+  background-color: #4267b2;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 32px;
+  margin-right: 8px;
+  padding: 0 0;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+  transform: translateY(0);
+  display: inline-flex;
+  align-items: center;
+}
+
+.editor .iconLD2 {
+  background-color: #0077b5;
+  border-radius: 2px;
+}
+
+.editor .iconLD {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  margin-left: -0.3125rem;
+  margin-bottom: -0.625rem;
+  justify-content: flex-start;
+}
+
+.editor .text {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 0.625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.editor div:nth-child(2) {
+  text-align: center;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor div:nth-child(2) img {
+  max-width: 12.5rem;
+  width: 100%;
+  border-radius: 100px;
+  -webkit-filter: grayscale(100%) brightness(98%) contrast(110%);
+  filter: grayscale(100%) brightness(98%) contrast(110%);
+}
+
+/* Media Queries */
+
 @media (max-width: 62.5rem) {
   .read-more {
     grid-template-columns: repeat(4, 1fr);
@@ -181,5 +287,22 @@ figcaption a {
   }
   .read-more > article:nth-child(2) {
     display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  .editor {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding: 1.25rem 0;
+    margin-top: 3.125rem;
+  }
+
+  .editor div:nth-child(2) {
+    margin-top: 0;
+    width: 150%;
+    padding: 0 1.5625rem 0 0.9375rem;
+    text-align: center;
   }
 }

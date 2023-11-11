@@ -146,7 +146,7 @@ let tableOfContents = function (content, target, options) {
             '<a href="#' +
             heading.id +
             '">' +
-            heading.innerHTML.trim() +
+            heading.textContent.trim() +
             "</a>";
 
           // If the last item, close it all out
@@ -184,3 +184,25 @@ let tableOfContents = function (content, target, options) {
 
   init();
 };
+
+// Highlight the Active Link
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      if (entry.intersectionRatio > 0) {
+        document.querySelector(`.toc-nav li a[href="#${id}"]`).parentElement.classList.add('active');
+      } else {
+        document.querySelector(`.toc-nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+      }
+    });
+  });
+
+  // Track all sections that have an `id` applied
+  document.querySelectorAll('.article-content h2[id], .article-content h3[id]').forEach((h) => {
+    observer.observe(h);
+  });
+  
+});
